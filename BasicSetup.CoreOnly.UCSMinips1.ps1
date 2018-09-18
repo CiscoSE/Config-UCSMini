@@ -1,4 +1,4 @@
-﻿<#
+<#
 .NOTES
 Copyright (c) 2018 Cisco and/or its affiliates.
 This software is licensed to you under the terms of the Cisco Sample
@@ -86,6 +86,7 @@ Get-UcsLanCloud | Add-UcsVlan -CompressionType "included" -DefaultNet "no" -Id 7
 Get-UcsLanCloud | Add-UcsVlan -CompressionType "included" -DefaultNet "no" -Id 80 -McastPolicyName "" -Name $vMVLANName         -PolicyOwner "local" -PubNwName "" -Sharing "none"
 
 #Create Site Name.
+add-UcsOrg -Name $SiteName
 
 
 ############################################################################################################
